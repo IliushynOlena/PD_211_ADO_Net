@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_IntroToADO_Net", "01_IntroToADO_Net\01_IntroToADO_Net.csproj", "{24EE27BC-5939-4F6B-84CB-25C6C5ABC589}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_DataAccessLayer", "02_DataAccessLayer\02_DataAccessLayer.csproj", "{841C29AE-BE72-46C8-AF72-422F269EE681}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24EE27BC-5939-4F6B-84CB-25C6C5ABC589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24EE27BC-5939-4F6B-84CB-25C6C5ABC589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24EE27BC-5939-4F6B-84CB-25C6C5ABC589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24EE27BC-5939-4F6B-84CB-25C6C5ABC589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{841C29AE-BE72-46C8-AF72-422F269EE681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{841C29AE-BE72-46C8-AF72-422F269EE681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{841C29AE-BE72-46C8-AF72-422F269EE681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{841C29AE-BE72-46C8-AF72-422F269EE681}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC981F82-BBF2-4351-B27E-6D0F9F13E5C9}
+	EndGlobalSection
+EndGlobal
