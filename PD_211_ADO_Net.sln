@@ -5,7 +5,13 @@ VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_IntroToADO_Net", "01_IntroToADO_Net\01_IntroToADO_Net.csproj", "{24EE27BC-5939-4F6B-84CB-25C6C5ABC589}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_DataAccessLayer", "02_DataAccessLayer\02_DataAccessLayer.csproj", "{841C29AE-BE72-46C8-AF72-422F269EE681}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_DataAccessLayer", "02_DataAccessLayer\02_DataAccessLayer.csproj", "{841C29AE-BE72-46C8-AF72-422F269EE681}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_wpf_client", "03_wpf_client\03_wpf_client.csproj", "{F0404C2F-0EDF-468B-B34B-CD917FB72E4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_data_access", "04_data_access\04_data_access.csproj", "{1E588572-14B8-4FFC-A88B-54B516F684F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_DisconnectedMode", "05_DisconnectedMode\05_DisconnectedMode.csproj", "{FD2013DD-EFEE-4E74-92D2-96E8430D617F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{841C29AE-BE72-46C8-AF72-422F269EE681}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{841C29AE-BE72-46C8-AF72-422F269EE681}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{841C29AE-BE72-46C8-AF72-422F269EE681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0404C2F-0EDF-468B-B34B-CD917FB72E4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0404C2F-0EDF-468B-B34B-CD917FB72E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0404C2F-0EDF-468B-B34B-CD917FB72E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0404C2F-0EDF-468B-B34B-CD917FB72E4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E588572-14B8-4FFC-A88B-54B516F684F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E588572-14B8-4FFC-A88B-54B516F684F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E588572-14B8-4FFC-A88B-54B516F684F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E588572-14B8-4FFC-A88B-54B516F684F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD2013DD-EFEE-4E74-92D2-96E8430D617F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD2013DD-EFEE-4E74-92D2-96E8430D617F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD2013DD-EFEE-4E74-92D2-96E8430D617F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD2013DD-EFEE-4E74-92D2-96E8430D617F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

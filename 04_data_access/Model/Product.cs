@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _02_DataAccessLayer
+namespace _04_data_access.Model
 {
     public class Product
     {
