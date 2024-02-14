@@ -7,11 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_IntroToADO_Net", "01_Int
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_DataAccessLayer", "02_DataAccessLayer\02_DataAccessLayer.csproj", "{841C29AE-BE72-46C8-AF72-422F269EE681}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_wpf_client", "03_wpf_client\03_wpf_client.csproj", "{F0404C2F-0EDF-468B-B34B-CD917FB72E4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_wpf_client", "03_wpf_client\03_wpf_client.csproj", "{F0404C2F-0EDF-468B-B34B-CD917FB72E4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_data_access", "04_data_access\04_data_access.csproj", "{1E588572-14B8-4FFC-A88B-54B516F684F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_data_access", "04_data_access\04_data_access.csproj", "{1E588572-14B8-4FFC-A88B-54B516F684F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_DisconnectedMode", "05_DisconnectedMode\05_DisconnectedMode.csproj", "{FD2013DD-EFEE-4E74-92D2-96E8430D617F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_DisconnectedMode", "05_DisconnectedMode\05_DisconnectedMode.csproj", "{FD2013DD-EFEE-4E74-92D2-96E8430D617F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_LinqToDatabase", "06_LinqToDatabase\06_LinqToDatabase.csproj", "{5AA5F76C-C82F-46E5-9EFF-2FD5265BBFF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_IntroToEF", "07_IntroToEF\07_IntroToEF.csproj", "{B53C52A6-DA81-4159-82CB-F94A4864367A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{FD2013DD-EFEE-4E74-92D2-96E8430D617F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD2013DD-EFEE-4E74-92D2-96E8430D617F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD2013DD-EFEE-4E74-92D2-96E8430D617F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AA5F76C-C82F-46E5-9EFF-2FD5265BBFF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AA5F76C-C82F-46E5-9EFF-2FD5265BBFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AA5F76C-C82F-46E5-9EFF-2FD5265BBFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AA5F76C-C82F-46E5-9EFF-2FD5265BBFF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B53C52A6-DA81-4159-82CB-F94A4864367A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B53C52A6-DA81-4159-82CB-F94A4864367A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B53C52A6-DA81-4159-82CB-F94A4864367A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B53C52A6-DA81-4159-82CB-F94A4864367A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
