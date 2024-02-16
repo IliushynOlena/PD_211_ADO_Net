@@ -1,17 +1,18 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using _07_IntroToEF.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace _07_IntroToEF
 {
-    public class AirplaneDbContext : DbContext
+    public class AirplaneDbContext: DbContext
     {
         public AirplaneDbContext()
         {
-            this.Database.EnsureCreated();
+            //this.Database.EnsureDeleted();
+            //this.Database.EnsureCreated();
             
         }
         //Collections
@@ -30,38 +31,61 @@ namespace _07_IntroToEF
                                         Application Intent=ReadWrite;Multi Subnet Failover=False");
         }
 
-    }
-    //Entities
-    public class Client
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public DateTime Birthday { get; set; }
-        //Relational type : Many to Many (*....*)
-        public ICollection<Flight> Flights { get; set; }
-    }
-    public class Flight
-    {
-        public int Id { get; set; }
-        public string DepartureCity { get; set; }
-        public string ArrivalCity { get; set; }
-        public DateTime DepartureTime { get; set; }
-        public DateTime ArrivalTime { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            //Initializator - Seeder
+            modelBuilder.Entity<Airplane>().HasData(new Airplane[]
+            {
+                new Airplane()
+                {
+                    Id = 1,
+                    Model = "Boing747",
+                    MaxPassanger = 300
+                },
+                new Airplane()
+                {
+                    Id = 2,
+                    Model = "AN914",
+                    MaxPassanger = 200
+                },
+                new Airplane()
+                {
+                    Id = 3,
+                    Model = "Mria",
+                    MaxPassanger = 150
+                }
+            });
+            modelBuilder.Entity<Flight>().HasData(new Flight[] {
+                new Flight()
+                {
+                     Number = 1,
+                     DepartureCity = "Kyiv",
+                     ArrivalCity = "Lviv",
+                     DepartureTime = new DateTime(2024,2,17),
+                     ArrivalTime = new DateTime(2024,2,17),
+                     AirplaneId = 1                        
+                },
+                new Flight()
+                {
+                     Number = 2,
+                     DepartureCity = "Varshava",
+                     ArrivalCity = "Lviv",
+                     DepartureTime = new DateTime(2024,2,18),
+                     ArrivalTime = new DateTime(2024,2,18),
+                     AirplaneId = 2
+                },
+                new Flight()
+                {
+                     Number = 3,
+                     DepartureCity = "Kyiv",
+                     ArrivalCity = "Lviv",
+                     DepartureTime = new DateTime(2024,2,22),
+                     ArrivalTime = new DateTime(2024,2,22),
+                     AirplaneId = 3
+                }
+            });
+        }
 
-        //Relational type : One to Many (1....*)
-        public int AirplaneId { get; set; }//foreign key
-        public Airplane Airplane { get; set; }//null
-        //Relational type : Many to Many (*....*)
-        public ICollection<Client> Clients { get; set; }
-
-    }
-    public class Airplane
-    {
-        public int Id { get; set; }
-        public string Model { get; set; }
-        public int MaxPassanger { get; set; }
-        //Relational type : Many to Many (*....*)
-        public ICollection<Flight> Flights { get; set; }
     }
 }
